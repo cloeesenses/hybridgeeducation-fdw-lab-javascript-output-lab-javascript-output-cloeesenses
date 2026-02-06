@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2 - Javascript Output</title>
+</head>
+
+<body>
+
+    <h1>Demostración de Output en Javascript</h1>
+
+    <button id="btnAlerta">Mostrar alerta</button>
+
+    <p id="parrafo"></p>
+
+    <button id="btnActualizar">Actualizar texto</button>
+
+    <script>
+        // Este mensaje se imprime cuando la página se carga
+        console.log("Hola desarrollador! Bienvenido a la práctica de Javascript Output.");
+
+        const botonAlerta = document.getElementById("btnAlerta");
+        const botonActualizar = document.getElementById("btnActualizar");
+        const parrafo = document.getElementById("parrafo");
+
+        // Alerta con mi nombre
+        botonAlerta.addEventListener("click", function () {
+            alert("Cloee Senses");
+        });
+
+        // Cambiar el texto del párrafo vacío
+        botonActualizar.addEventListener("click", function () {
+            parrafo.textContent = "¡Texto actualizado con Javascript!";
+        });
+    </script>
+
+</body>
+
+</html>
